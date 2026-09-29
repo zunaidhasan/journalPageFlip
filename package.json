@@ -62,6 +62,7 @@
     "test:watch": "vitest",
     "build-global": "webpack",
     "build": "rollup -c rollup.config.mjs && tsc -p tsconfig.build.json",
+    "build:web": "npm run build && node scripts/prepare-web.mjs",
     "prepublishOnly": "npm test && npm run build"
   },
   "keywords": [
